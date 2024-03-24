@@ -1,5 +1,5 @@
 .toast{
-
+    animation: Slide_Up 2.4s ease;
     background-color: var(--bg-color);
     border: 1px solid var(--nav-border-color);
     .toast-header{
@@ -18,5 +18,14 @@
     }
     .toast-body{
         color: var(--p-color);
+    }
+}
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
