@@ -1,0 +1,45 @@
+.row {
+    .col-12 {
+        .tools_title {
+            text-align: center;
+            font-family: var(--bw-font-family-primary);
+            font-size: calc(var(--bw-font-size-base) + 1.8rem);
+            font-weight: 800;
+            margin-bottom: 100px;
+            color: var(--h1-color);
+        }
+
+    }
+
+    .col-5 {
+        .row {
+            .tools_subtitle {
+                text-align: justify;
+                font-family: var(--bw-font-family-primary);
+                font-size: calc(var(--bw-font-size-base) + 0.3rem);
+                font-weight: 700;
+                margin-bottom: 30px;
+                letter-spacing: var(--bw-font-letter-spacing) + 0.2px;
+                color: var(--h1-color);
+            }
+
+            .tools_advantages {
+                li {
+                    color: var(--p-color);
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    font-size: calc(var(--bw-font-size-base) + 0.2rem);
+                    .icon{
+                        color: var(--bw-color-blue-primary);
+                        margin-right: 5px;
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,65 @@
+<bw-section section_name="examples_section">
+  <div class="row">
+
+    <div class="col">
+      <div class="examples-title">
+        Chega de perder tempo com o que pode ser <span class="examples-emphasis">automatizado</span>
+      </div>
+    </div>
+
+    <div class="col-12">
+
+      <div class="d-flex align-items-start">
+
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+          <button class="nav-link" (click)="selectedItem = item.id"
+            [ngClass]="{'show active': selectedItem === item.id}" [id]="'v-pills-' + item.title+'-tab'"
+            *ngFor="let item of examples" data-bs-toggle="pill" [attr.data-bs-target]="'#v-pills-' + item.title "
+            type="button" role="tab" [attr.aria-controls]="'v-pills-' + + item.title " aria-selected="true">
+
+
+            <div class="row">
+              <div class="col-md-2">
+                <div class="icon-group d-flex align-items-center justify-content-center"
+                  [ngStyle]="{'background': 'rgb(' + item.color + ',0.15)'}">
+                  <ng-icon class="icon" size="1.8em" [name]="item.icon" [ngStyle]="{'color': 'rgb(' + item.color + ')'}"></ng-icon>
+                </div>
+
+              </div>
+              <div class="col-md-10">
+                <div class="row d-flex flex-row">
+                  <span class="tab-item-title">{{item.title}}</span>
+
+
+                  <div [class]="'tab ' + item.title + '--tab'"
+                    [ngClass]="{'--show-subtitle': selectedItem === item.id}">
+                    <span class="tab-item-subtitle">{{item.subtitle}}</span>
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent" *ngFor="let item of examples">
+          <div class="tab-pane fade" [ngClass]="{'show active': item.id == 1}" [id]="'v-pills-' + item.title"
+            role="tabpanel" [attr.aria-labelledby]="'v-pills-' + item.title + '-tab'" tabindex="0">
+            
+            {{item.title}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</bw-section>

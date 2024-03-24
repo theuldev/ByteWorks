@@ -1,0 +1,11 @@
+<div class="wrapper " [ngClass]="{'dark-mode': themeService.isDarkMode(), 'light-mode': !themeService.isDarkMode()}">
+    <bw-header></bw-header>
+    <main class="wrapper-content">
+        
+        <div class="container" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+            
+            <ng-content></ng-content>
+        </div>
+     
+    </main>
+</div>

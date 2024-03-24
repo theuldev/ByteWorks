@@ -1,0 +1,18 @@
+<bw-section section_name="faq_section">
+    
+
+    <div class="row">
+        <div class="col-12">
+            <div class="faq-title">
+                Perguntas
+            </div>
+        </div>
+      <div class="col-12">
+        <div class="faq-questions" >
+            <bw-question class="question"  *ngFor="let item of questions" [question]="item"></bw-question>
+        </div>
+      </div>
+
+   
+    </div>
+</bw-section>

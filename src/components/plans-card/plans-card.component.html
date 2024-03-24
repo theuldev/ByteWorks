@@ -1,0 +1,20 @@
+<div class="card" [ngStyle]="{'background': 'rgb(' + plan.card_bg_color + ',0.15)'}">
+  <div class="card-body">
+    <h5 class="card-title mt-2" [ngStyle]="{'color': 'rgb(' + plan.card_bg_color + ',0.45)'}">{{plan.name}}</h5>
+    <p class="card-text">{{plan.text}}</p>
+    <div class="card-plans-advantages">
+      <li *ngFor="let item of plan.advantages">
+        <ng-icon name="bootstrapCheckAll" class="icon" size="1.3em"></ng-icon>
+        {{item.name}}
+      </li>
+    </div>
+
+    <div class="btn-group">
+      <a href="#" class="btn btn-primary" [ngStyle]="{'background': 'rgb(' + plan.card_bg_color + ')'}">
+        <span class="btn-text">Começar Agora</span>
+        <span class="overlay"></span>
+      </a>
+    </div>
+
+  </div>
+</div>

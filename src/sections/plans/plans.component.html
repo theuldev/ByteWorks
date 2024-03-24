@@ -1,0 +1,10 @@
+<bw-section section_name="plans_section">
+    <div class="row d-flex flex-row align-content-center flex-wrap">
+        <div class="plans-title mb-5">
+            Escolha um de nossos planos oferecidos
+        </div>
+        <div class="col" *ngFor="let item of plans">
+            <bw-plans-card [card_bg_color]="item.card_bg_color" [plan]="item"></bw-plans-card>
+        </div>
+    </div>
+</bw-section>

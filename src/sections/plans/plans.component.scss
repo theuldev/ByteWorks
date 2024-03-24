@@ -1,0 +1,10 @@
+.row {
+    .plans-title {
+        text-align: center;
+        font-family: var(--bw-font-family-primary);
+        font-size: calc(var(--bw-font-size-base) + 1.8rem);
+        font-weight: 800;
+        margin-bottom: 100px;
+        color: var(--h1-color);
+    }
+}

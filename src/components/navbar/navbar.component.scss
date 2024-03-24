@@ -1,0 +1,94 @@
+.header {
+    font-family: var(--bw-font-family-primary);
+    background: var(--nav-bg-color);
+    border-bottom: 1px solid var(--nav-border-color);
+    font-family: var(--bw-font-family-primary);
+    backdrop-filter: blur(2px);
+   
+    .navbar {
+
+        .navbar-menu-mobile {}
+
+        .navbar-content {
+            width: 100% !important;
+
+            .mode-toggle {
+                position: relative;
+               right: 40px;
+
+
+               color:var(--icon-mode-toogle);
+
+               &:hover{
+
+                color: var(--icon-mode-toogle-hover);
+                transition: color 0.5s;
+
+               }
+            }
+
+
+
+            .offcanvas {
+                .nav {
+                    
+                    .nav-item {
+    
+                        .nav-link {
+        
+                            position: relative;
+                            font-size: calc(var(--bw-font-size-base) -0.1rem);
+                            letter-spacing: calc(var(--bw-font-letter-spacing) + 0.4px);
+                            font-weight:600;
+                            //text-transform: uppercase;
+                            color: var(--nav-item-color);
+                            &.active {
+                                color: var(--bw-color-blue-primary);
+                                background: transparent;
+                            }
+                        
+                            &.active:after {
+                                content: '';
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50px;
+                                position: absolute;
+                                background: var(--bw-color-blue-primary);
+                                bottom: -5px;
+                                left: calc(50% - 5px);
+                                transform-origin: left;
+                                transition: transform .5s ease;
+                                transform: scaleX(1);
+                            }
+
+                            &:hover{
+                                color: var(--nav-item-color-hover);
+                                transition: color 0.5s ease;
+                            }
+                        }
+                        .nav-link:after {
+                            content: '';
+                            width: 100%;
+                            position: absolute;
+                            height: 3px;
+                            border-radius: 5px;
+                            background: var(--pt-color-cyan-primary);
+                            bottom: -5px;
+                            left: 0;
+                            transform-origin: left;
+                            transition: transform .5s ease;
+                            transform: scaleX(0);
+                        }
+                        
+                    }
+
+                    .nav-links {
+                        align-items: center;
+                        display: flex;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

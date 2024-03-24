@@ -1,0 +1,53 @@
+<header class="header fixed-top"
+    [ngClass]="{'dark-mode':themeService.isDarkMode(),'light-mode':!themeService.isDarkMode()} ">
+    <nav class="navbar navbar-expand-sm pt-4 pb-4">
+        <div class="navbar-menu-mobile d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd"
+                aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
+
+                <i class="material-icons">
+                    &#xe5d2;
+                </i>
+            </button>
+        </div>
+
+        <div class="navbar-content d-flex flex-row">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasMd"
+                aria-labelledby="navbarOffcanvasMdLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navegação</h5>
+
+                    <i class="material-icons" data-bs-dismiss="offcanvas">
+                        &#xe5cd;
+                    </i>
+                </div>
+
+                <ul class="nav nav-pills justify-content-center gap-xl-4 gap-md-5 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#examples_section" id="examples">Exemplos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo_section" id="demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools_section" id="tools">Ferramentas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans_section" id="plans">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq_section" id="faq">FAQ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="mode-toggle" (click)="toggleTheme()"> <ng-icon size="28px"
+                    [name]="themeService.isDarkMode() ? 'matWbSunnyOutline': 'tablerMoon'" ></ng-icon>
+            </div>
+        </div>
+
+    </nav>
+</header>

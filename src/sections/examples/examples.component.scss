@@ -1,0 +1,81 @@
+.row {
+    .d-flex {
+        .nav {
+            width: 526px;
+
+            .nav-link {
+                text-align: start;
+                margin-bottom: 40px;
+                padding: 25px;
+                
+
+                .tab-item-title {
+                    color: var(--h1-color);
+                    font-size: calc(var(--bw-font-size-base) + 0.5rem);
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    letter-spacing: calc(var(--bw-font-letter-spacing));
+
+
+
+                }
+
+                &.show {
+                    &.active {
+                        background: var(--v-pills-active) !important;
+                    
+
+                    }
+
+                }
+
+                .tab {
+                    //display: none;
+                    opacity: 0;
+                    .tab-item-subtitle {
+                        color: var(--p-color);
+                        font-size: calc(var(--bw-font-size-base) + 0.2rem);
+
+
+                    }
+
+                    &.--show-subtitle {
+                        //display: block;
+                        opacity: 1;
+                        transition: opacity 0.8s!important;
+                    }
+                }
+
+                .icon-group {
+    
+                    border-radius: 12px;
+
+                    height: 50px;
+                    width: 50px;
+
+
+                    .icon {}
+                }
+
+            }
+        }
+    }
+
+    .col {
+        .examples-title {
+            text-align: center;
+            font-family: var(--bw-font-family-primary);
+            font-size: calc(var(--bw-font-size-base) + 1.8rem);
+            font-weight: 800;
+            margin-bottom: 100px;
+            color: var(--h1-color);
+
+            animation: Slide_PseudoElement_To_Up 2.4s ease;
+
+        .examples-emphasis {
+                color: var(--bw-color-blue-primary) !important;
+                text-shadow: 0 0px 40px var(--bw-color-blue-primary);
+            }
+        }
+    }
+}

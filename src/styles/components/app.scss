@@ -1,0 +1,9 @@
+@mixin host {
+    app-root {
+        font-family: var(--bw-font-family-primary)!important;
+    }
+}
+
+
+
+@include host;
