@@ -23,6 +23,7 @@
 
                 color: var(--icon-mode-toogle-hover);
                 transition: color 0.5s;
+             
 
                }
             }
@@ -63,7 +64,8 @@
 
                             &:hover{
                                 color: var(--nav-item-color-hover);
-                                transition: color 0.5s ease;
+                                transition: all 0.5s ease;
+                                font-weight: 800;
                             }
                         }
                         .nav-link:after {
