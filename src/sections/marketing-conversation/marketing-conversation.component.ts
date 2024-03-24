@@ -5,12 +5,13 @@ import { heroChevronRightMini } from '@ng-icons/heroicons/mini'
 import { CommonModule } from '@angular/common';
 import { bootstrapWhatsapp } from '@ng-icons/bootstrap-icons';
 import {matClose} from '@ng-icons/material-icons/baseline'
+import { ToastComponent } from '../../components/toast/toast.component';
 
 @Component({
   selector: 'bw-marketing-conversation',
   standalone: true,
-  imports: [SectionComponent, NgIconComponent,CommonModule],
-  viewProviders: [provideIcons({ heroChevronRightMini , bootstrapWhatsapp,matClose})],
+  imports: [SectionComponent, NgIconComponent,CommonModule,ToastComponent],
+  viewProviders: [provideIcons({ heroChevronRightMini})],
 
   templateUrl: './marketing-conversation.component.html',
   styleUrl: './marketing-conversation.component.scss'

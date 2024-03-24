@@ -1,0 +1,22 @@
+.toast{
+
+    background-color: var(--bg-color);
+    border: 1px solid var(--nav-border-color);
+    .toast-header{
+    
+        background-color: var(--bg-color);
+        color: var(--h1-color);
+        .whatsapp-icon{
+            color: var(--bw-color-green-quaternary);
+            margin: 5px;
+        }
+        .btn{
+            .close-icon{
+                color: var(--h1-color);
+            }
+        }
+    }
+    .toast-body{
+        color: var(--p-color);
+    }
+}
