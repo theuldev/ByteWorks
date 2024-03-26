@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ThemeService } from '../../shared/services/ThemeService';
 
 @Component({
   selector: 'bw-root',
@@ -10,4 +11,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ByteWorks';
+
+
+
+
+
 }

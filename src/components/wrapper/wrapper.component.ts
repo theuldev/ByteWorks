@@ -11,11 +11,4 @@ import { ThemeService } from '../../shared/services/ThemeService';
   styleUrl: './wrapper.component.scss'
 })
 export class WrapperComponent {
-  isDarkMode: boolean = false;
-
-  themeService!: ThemeService;
-  constructor(private _themeService : ThemeService) {
-    this.themeService = _themeService;
-
-  }
 }

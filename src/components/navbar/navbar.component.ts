@@ -43,6 +43,20 @@ themeService!: ThemeService;
 
   toggleTheme() {
     this.themeService.toggleDarkMode(); 
+
+    this.applyTheme();
+  }
+  applyTheme(): void{
+    const darkMode = this.themeService.isDarkMode();
+    const html = document.documentElement;
+    if (darkMode) {
+      html.classList.remove('light-mode');
+      html.classList.add('dark-mode');
+    
+    } else {
+      html.classList.add('light-mode');
+      html.classList.remove('dark-mode');
+    }
   }
 
 }
