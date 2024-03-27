@@ -19,7 +19,7 @@
         }
 
         .card-plans-advantages {
-            
+
             li {
                 color: var(--p-color);
                 list-style-type: none;
@@ -64,9 +64,11 @@
                 }
             }
 
-            &:hover .btn {
-                .overlay {
-                    background-color: rgba(0, 0, 0, 0.5);
+            &:hover {
+                .btn {
+                    .overlay {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
                 }
             }
         }

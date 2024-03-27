@@ -11,4 +11,5 @@ import { ThemeService } from '../../shared/services/ThemeService';
   styleUrl: './wrapper.component.scss'
 })
 export class WrapperComponent {
+
 }

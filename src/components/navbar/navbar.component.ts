@@ -54,8 +54,9 @@ themeService!: ThemeService;
       html.classList.add('dark-mode');
     
     } else {
-      html.classList.add('light-mode');
       html.classList.remove('dark-mode');
+      html.classList.add('light-mode');
+
     }
   }
 
