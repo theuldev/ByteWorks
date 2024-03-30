@@ -8,11 +8,12 @@ import { FaqComponent } from '../../sections/faq/faq.component';
 import { ToolsComponent } from '../../sections/tools/tools.component';
 import { ExamplesComponent } from '../../sections/examples/examples.component';
 import { DemoComponent } from '../../sections/demo/demo.component';
+import { ToastComponent } from '../../components/toast/toast.component';
 
 @Component({
   selector: 'bw-home',
   standalone: true,
-  imports: [CommonModule, WrapperComponent,MarketingConversationComponent,PlansComponent,FaqComponent,ToolsComponent,ExamplesComponent,DemoComponent],
+  imports: [CommonModule, WrapperComponent,MarketingConversationComponent,PlansComponent,FaqComponent,ToolsComponent,ExamplesComponent,DemoComponent,ToastComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
