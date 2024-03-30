@@ -1,0 +1,12 @@
+.btn {
+    border-radius: 20px;
+    background: linear-gradient(157deg, var(--bw-color-blue-primary) -12%, var(--bw-color-blue-secondary) 109%);
+    border: none;
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--bw-font-family-primary)!important;
+    .btn-text {
+        font-weight: 600;
+    }
+}

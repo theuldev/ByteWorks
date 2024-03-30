@@ -1,8 +1,10 @@
 :root {
-    --bw-color-blue-primary: #3070c2;
-    --bw-color-blue-secondary: #114384;
+    --bw-color-blue-primary: #198afa;
+    --bw-color-blue-secondary: #64b0fc;
+    --bw-color-blue-tertiary: #EEF3FF;
+    --bw-color-blue-hsla-primary:210;
     --bw-color-black-primary: #0c0c0c;
-
+   
 
     --bw-color-gray-primary: #2B3238;
     --bw-color-gray-secondary: #a39fa9;
@@ -21,7 +23,9 @@
 
 
     --bw-color-black-transparent: rgb(15, 15, 17, .8);
-    --bw-color-white-transparent: rgb(255, 255, 255, .8);
+    --bw-color-white-transparent: rgb(250, 252, 255,.8)
     --bw-color-white-primary: #FEFEFE;
     --bw-color-white-secondary: #EFEFF1;
+    --bw-color-black-hsla-primary: 202;
+    --bw-color-white-tertiary:#fafcff;
 }

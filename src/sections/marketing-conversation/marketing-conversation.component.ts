@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { bootstrapWhatsapp } from '@ng-icons/bootstrap-icons';
 import {matClose} from '@ng-icons/material-icons/baseline'
 import { ToastComponent } from '../../components/toast/toast.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'bw-marketing-conversation',
   standalone: true,
-  imports: [SectionComponent, NgIconComponent,CommonModule,ToastComponent],
+  imports: [SectionComponent, NgIconComponent,CommonModule,ToastComponent,ButtonComponent],
   viewProviders: [provideIcons({ heroChevronRightMini})],
 
   templateUrl: './marketing-conversation.component.html',

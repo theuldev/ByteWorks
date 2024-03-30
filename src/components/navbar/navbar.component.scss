@@ -1,8 +1,8 @@
 .header {
     font-family: var(--bw-font-family-primary);
     background: var(--nav-bg-color);
-    border-bottom: 1px solid var(--nav-border-color);
-    font-family: var(--bw-font-family-primary);
+    border-bottom: 1px solid var(--border-color);
+    font-family: var(--bw-font-family-secondary);
     backdrop-filter: blur(2px);
    
     .navbar {
@@ -65,7 +65,7 @@
                             &:hover{
                                 color: var(--nav-item-color-hover);
                                 transition: all 0.5s ease;
-                                font-weight: 800;
+                                //font-weight: 800;
                             }
                         }
                         .nav-link:after {

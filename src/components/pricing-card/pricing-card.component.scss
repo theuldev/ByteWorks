@@ -1,0 +1,79 @@
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    box-shadow: 0 12px 24px hsla(var(--box-shadow-color), 61%, 16%, .1);
+    font-family: var(--bw-font-family-secondary);
+
+    .card-body {
+        width: 100%;
+
+        .card-text {
+            color: var(--p-color);
+            text-transform: uppercase;
+            font-size: calc(var(--bw-font-size-base) - 0.1rem);
+            font-weight: 400;
+            letter-spacing: calc(var(--bw-font-letter-spacing) - 0.2px);
+            margin-top: 40px;
+            padding-left: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .card-title {
+            text-align: justify;
+            font-size: calc(var(--bw-font-size-base) + 0.9rem);
+            font-weight: 600;
+            color: var(--h1-color);
+            margin-bottom: 30px;
+            padding-left: 10px;
+        }
+
+
+
+        .card-plans-advantages {
+
+            li {
+                color: var(--li-color);
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: calc(var(--bw-font-size-base));
+                margin-bottom: 20px;
+                padding-left: 10px;
+
+                .icon {
+                    color: var(--bw-color-blue-primary);
+                    margin-right: 5px;
+                }
+            }
+
+        }
+
+        .card-price {
+            margin-top: 20px;
+            text-align: center;
+            font-size: calc(var(--bw-font-size-base) + 2.2rem);
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--h1-color);
+
+            .card-price-month {
+                font-size: calc(var(--bw-font-size-base) + 0.2rem);
+            }
+
+        }
+
+        .btn-group {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+
+        }
+
+
+    }
+}

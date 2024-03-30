@@ -4,7 +4,7 @@
             Escolha um de nossos planos oferecidos
         </div>
         <div class="col" *ngFor="let item of plans">
-            <bw-plans-card [card_bg_color]="item.card_bg_color" [plan]="item"></bw-plans-card>
+            <bw-pricing-card [plan]="item"></bw-pricing-card>
         </div>
     </div>
 </bw-section>

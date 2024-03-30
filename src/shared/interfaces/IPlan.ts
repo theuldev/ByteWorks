@@ -2,8 +2,8 @@ export interface IPlan {
     id: number;
     name: string;
     text: string;
-    advantages: IAdvantage[]
-    card_bg_color: string;
+    advantages: IAdvantage[];
+    price: number;
 }
 
 export interface IAdvantage {
@@ -12,9 +12,9 @@ export interface IAdvantage {
 }
 
 export function returnPlans(): IPlan[] {
-    var plans : IPlan[] = [{id: 1, name: 'Starter', text: 'texto',advantages: [{ id: 1, name: '1 número de WhatsApp conectado' }], card_bg_color: '118, 195, 81'},
-    {id: 2, name: 'Pro', text: 'texto',advantages: [{ id: 1, name: 'TODAS Funcionalidades do STARTER' }], card_bg_color: '112, 68, 237'},
-    {id: 3, name: 'Agências', text: 'texto',advantages: [{ id: 1, name: 'TODAS Funcionalidades do Plano PRO' }], card_bg_color: '17, 135, 244'}
+    var plans : IPlan[] = [{id: 1, name: 'Básico', text: 'Plano grátis',advantages: [{ id: 1, name: '1 número de WhatsApp conectado' }], price: 50 },
+    {id: 2, name: 'Profissional', text: 'Mais popular',advantages: [{ id: 1, name: 'TODAS Funcionalidades do STARTER' }], price: 50 },
+    {id: 3, name: 'Agências', text: 'Para empresas',advantages: [{ id: 1, name: 'TODAS Funcionalidades do Plano PRO' }], price: 50 }
 ]
     
     return plans;

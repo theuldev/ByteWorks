@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-body">
+
+    <p class="card-text">{{plan.text}}</p>
+    <h5 class="card-title">{{plan.name}}</h5>
+
+    <div class="card-plans-advantages">
+      <li *ngFor="let item of plan.advantages">
+        <ng-icon name="bootstrapCheck" class="icon" size="1.6em"></ng-icon>
+        {{item.name}}
+      </li>
+    </div>
+    <div class="card-price">
+      {{plan.price | currency | slice:0:-3 }} <span class="card-price-month">/mês</span>
+    </div>
+
+    <div class="btn-group">
+      <bw-button text="Eu quero esse"></bw-button>
+    </div>
+
+
+  </div>
+</div>

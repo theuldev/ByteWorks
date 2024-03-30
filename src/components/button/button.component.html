@@ -1,0 +1,7 @@
+<button class="btn btn-primary" [ngStyle]="{'width': btn_width, 'height':btn_height}" >
+    <span class="btn-text">{{text}}</span>
+    <span *ngIf="icon_name != undefined || null">
+      <ng-icon class="icon" [name]="icon_name" [size]="icon_size"></ng-icon>
+    </span>
+   
+  </button>

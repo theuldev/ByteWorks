@@ -1,45 +1,41 @@
-html{
+html {
 
+    &.dark-mode {
 
-        &.dark-mode {
+        --h1-color: var(--bw-color-white-secondary);
+        --nav-item-color: var(--bw-color-gray-secondary);
+        --p-color: var(--bw-color-gray-secondary);
+        --li-color: var(--bw-color-gray-secondary);
+        --v-pills-active: var(--bw-color-gray-senary);
+        --nav-bg-color: var(--bw-color-black-transparent);
+        --bg-color: var(--bw-bgcolor-dark-mode);
+        --accordion-bgcolor: var(--bw-bgcolor-dark-mode);
+        --icon-mode-toogle: var(--bw-color-gray-secondary);
+        --border-color: var(--bw-color-gray-quinary);
+        --icon-mode-toogle-hover: var(--bw-color-white-secondary);
+        --nav-item-color-hover: var(--bw-color-white-secondary);
+        --scroll-bar: var(--bw-color-gray-quinary);
+        background-color: var(--bg-color);
+        --box-shadow-color: var(--bw-color-black-hsla-primary);
+    }
 
-            --h1-color: var(--bw-color-white-secondary);
-            --nav-item-color: var(--bw-color-gray-secondary);
-            --p-color: var(--bw-color-gray-secondary);
-            --v-pills-active: var(--bw-color-gray-senary);
-            --nav-bg-color: var(--bw-color-black-transparent);
-    
-            --bg-color: var(--bw-bgcolor-dark-mode);
-    
-            --accordion-bgcolor: var(--bw-bgcolor-dark-mode);
-            --icon-mode-toogle: var(--bw-color-gray-secondary);
-            --nav-border-color: var(--bw-color-gray-quinary);
-            --icon-mode-toogle-hover: var(--bw-color-white-secondary);
-            --nav-item-color-hover: var(--bw-color-white-secondary);
-    
-    
-    
-            background-color: var(--bg-color);
-        }
-    
-        &.light-mode {
-            --nav-item-color: var(--bw-color-gray-primary);
-            --h1-color: var(--bw-color-gray-primary);
-            --nav-bg-color: var(--bw-color-white-transparent);
-            --p-color: var(--bw-color-gray-secondary);
-            --v-pills-active: var(--bw-color-gray-tertiary);
-    
-            --accordion-bgcolor: transparent;
-    
-            --bg-color: var(--bw-bgcolor-light-mode);
-            --icon-mode-toogle: var(--bw-color-gray-primary);
-            --nav-border-color: var(--bw-color-gray-quaternary) --icon-mode-toogle-hover: var(--bw-color-gray-primary);
-    
-            --nav-item-color-hover: var(--bw-color-black-primary);
-    
-    
-            background-color: var(--bg-color);
-    
-        }
-    
+    &.light-mode {
+        --nav-item-color: var(--bw-color-gray-primary);
+        --h1-color: var(--bw-color-gray-primary);
+        --nav-bg-color: var(--bw-color-white-transparent);
+        --p-color: var(--bw-color-gray-senary);
+        --li-color: var(--bw-color-gray-primary);
+        --v-pills-active: var(--bw-color-blue-tertiary);
+        --accordion-bgcolor: transparent;
+        --bg-color: var(--bw-bgcolor-light-mode);
+        --icon-mode-toogle: var(--bw-color-gray-primary);
+        --border-color: var(--bw-color-gray-quaternary) --icon-mode-toogle-hover: var(--bw-color-gray-primary);
+        --nav-item-color-hover: var(--bw-color-black-primary);
+        --scroll-bar: var(--bw-color-gray-secondary);
+        background-color: var(--bg-color);
+        --box-shadow-color: var(--bw-color-blue-hsla-primary);
+        --bg-hover:var();
+
+    }
+
 }

@@ -22,38 +22,8 @@
 
         .btn-group {
             display: flex;
-
-         
-        
-            .btn {
-                margin-top: 50px;
-                background: var(--bw-color-blue-primary) !important;
-                padding: 15px 20px 15px 20px;
-        
-                font-size: calc(var(--bw-font-size-base));
-                //text-transform: uppercase;
-                font-weight: 600;
-                max-width: 250px !important;
-
-                height: 100%;
-                border-radius: 50px;
-                text-align: center;
-
-                &:hover {
-                        transition: background 0.2s ease;
-                        background: var(--bw-color-blue-secondary)!important;
-                    
-                }
-
-                
-            }
-
-            &:hover {
-                //transition: background ease 0.6s;
-                //background: var(--bw-color-blue-secondary) !important;
-
-                //box-shadow: 0 0px 40px var(--bw-color-blue-primary);
-            }
+            margin-top: 40px;
+            
         }
 
     }

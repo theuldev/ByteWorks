@@ -1,6 +1,6 @@
 .row {
     .col-12 {
-        .tools_title {
+        .tools-title {
             text-align: center;
             font-family: var(--bw-font-family-primary);
             font-size: calc(var(--bw-font-size-base) + 1.8rem);
@@ -13,14 +13,14 @@
 
     .col-5 {
         .row {
-            .tools_subtitle {
+            .tools-subtitle {
                 text-align: justify;
                 font-family: var(--bw-font-family-primary);
-                font-size: calc(var(--bw-font-size-base) + 0.3rem);
-                font-weight: 700;
+                font-size: calc(var(--bw-font-size-base) + 0.125rem);
+                //font-weight: 700;
                 margin-bottom: 30px;
                 letter-spacing: var(--bw-font-letter-spacing) + 0.2px;
-                color: var(--h1-color);
+                color: var(--p-color);
             }
 
             .tools_advantages {
@@ -32,7 +32,7 @@
                     margin-top: 20px;
                     font-size: calc(var(--bw-font-size-base) + 0.2rem);
                     .icon{
-                        color: var(--bw-color-blue-primary);
+                        color: var(--icon-mode-toogle);
                         margin-right: 5px;
                         
                     }
