@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { CommonModule } from '@angular/common';
-import { ThemeService } from '../../shared/services/ThemeService';
+import { ThemeService } from '../../shared/services/theme.service';
 
 @Component({
   selector: 'bw-wrapper',

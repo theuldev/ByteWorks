@@ -1,6 +1,6 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ThemeService } from '../../shared/services/ThemeService';
+import { ThemeService } from '../../shared/services/theme.service';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 @Component({

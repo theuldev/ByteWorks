@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output, AfterViewInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
+import { Component, EventEmitter, Output, AfterViewInit, ChangeDetectorRef, ChangeDetectionStrategy, inject } from '@angular/core';
 import { bootstrapMoon, bootstrapSun, bootstrapSunFill } from '@ng-icons/bootstrap-icons';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import { ThemeService } from '../../shared/services/ThemeService';
+import { ThemeService } from '../../shared/services/theme.service';
 import { error } from 'console';
 import { tablerMoon } from '@ng-icons/tabler-icons';
 import { matWbSunnyOutline } from '@ng-icons/material-icons/outline';
-
 @Component({
   selector: 'bw-navbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -19,10 +18,10 @@ import { matWbSunnyOutline } from '@ng-icons/material-icons/outline';
 export class NavbarComponent {
 isDarkMode!:boolean;
 themeService!: ThemeService;
+
   constructor(private cdref: ChangeDetectorRef,private _themeService: ThemeService) {
     this.themeService = _themeService;
-  }
-
+   }
   //ngAfterViewInit() {
    // setTimeout(() => {
     //  if (window != null) { 
