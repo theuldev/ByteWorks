@@ -1,5 +1,4 @@
 .section{
-    height:var(--bw-section-width)!important;
-
+    min-height:var(--bw-section-width)!important;
     font-family: var(--bw-font-family-primary);
 }

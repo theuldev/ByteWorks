@@ -1,0 +1,18 @@
+<div class="card w-100">
+    <div class="row d-flex flex-md-row">
+      <div class="col-md-6">
+        <img [src]="'../../assets/images/' + project_item.image" class="card-img" alt="">
+      </div>
+  
+      <div class="col-md-6">
+        <div class="card-body">
+          <span class="card-text --year">{{project_item.year}}</span>
+          <div class="card-text --title"> {{project_item.title}}</div>
+          <div class="card-text --subtitle">{{project_item.subtitle}}</div>
+          <div class="card-text d-flex flex-row flex-wrap --stacks-badge gap-1">
+            <bw-stack-badge *ngFor="let item of project_item.stacks" [stack]="item.name"></bw-stack-badge>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

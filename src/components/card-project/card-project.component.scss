@@ -1,0 +1,60 @@
+.card {
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+    border: none;
+
+    .row {
+        .col-md-6 {
+                align-self: center;
+            .card-img {
+                max-width: 480px;
+                max-height: 260px;
+
+                border-radius: 10px;
+                filter: drop-shadow(0 0 0.20rem var(--pt-color-gray-primary));
+            }
+
+            .card-body {
+                font-family: var(--pt-font-family-primary);
+                color: var(--p-color);
+
+
+                .card-text {
+
+
+
+
+                    &.--year {
+                        color: var(--pt-color-blue-tertiary);
+                        font-weight: 600;
+                        font-size: calc(var(--pt-font-size-base) - 0.2rem);
+                    }
+
+                    &.--title {
+                        color: var(--pt-color-white-secondary);
+                        font-weight: 600;
+                        font-size: calc(var(--pt-font-size-base) + 0.1rem);
+                    }
+
+                    &.--subtitle {
+                        color: var(--pt-color-blue-tertiary);
+                        font-weight: 600;
+                        font-size: calc(var(--pt-font-size-base) - 0.025rem);
+                       
+                        hyphens: auto;
+                        text-align: justify;
+                        word-spacing: -0.5px;
+                    }
+
+                    &.--stacks-badge {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}

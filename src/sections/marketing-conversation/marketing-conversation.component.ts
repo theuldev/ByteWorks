@@ -21,6 +21,6 @@ export class MarketingConversationComponent {
 
 
   goToPlans() {
-    document.getElementById('plans_section')?.scrollIntoView();
+    document.getElementById('contact_section')?.scrollIntoView();
   }
 }
