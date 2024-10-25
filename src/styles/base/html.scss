@@ -2,37 +2,40 @@ html {
 
     &.dark-mode {
 
-        --h1-color: var(--bw-color-white-secondary);
-        --nav-item-color: var(--bw-color-gray-secondary);
-        --p-color: var(--bw-color-gray-secondary);
-        --li-color: var(--bw-color-gray-secondary);
-        --v-pills-active: var(--bw-color-gray-senary);
+        --h1-color: var(--bw-color-white-200);
+        --nav-item-color: var(--bw-color-gray-400);
+        --p-color: var(--bw-color-gray-400);
+        --li-color: var(--bw-color-gray-400);
+        --v-pills-active: var(--bw-color-black-800);
         --nav-bg-color: var(--bw-color-black-transparent);
-        --bg-color: var(--bw-bgcolor-dark-mode);
         --accordion-bgcolor: var(--bw-bgcolor-dark-mode);
-        --icon-mode-toogle: var(--bw-color-gray-secondary);
-        --border-color: var(--bw-color-gray-quinary);
-        --icon-mode-toogle-hover: var(--bw-color-white-secondary);
-        --nav-item-color-hover: var(--bw-color-white-secondary);
-        --scroll-bar: var(--bw-color-gray-quinary);
-        background-color: var(--bg-color);
+        --icon-mode-toogle: var(--bw-color-gray-400);
+        --border-color: var(--bw-color-black-700);
+        --bg-input-color:var(--bw-color-black-700);
+        --icon-mode-toogle---scroll-barhover: var(--bw-color-white-200);
+        --nav-item-color-hover: var(--bw-color-white-200);
+        --scroll-bar: var(--bw-color-black-700);
+        background-color: var(--bw-color-black-900);
+        --bg-color: var(--bw-color-black-900);
         --box-shadow-color: var(--bw-color-black-hsla-primary);
     }
 
     &.light-mode {
-        --nav-item-color: var(--bw-color-gray-primary);
-        --h1-color: var(--bw-color-gray-primary);
+        --nav-item-color: var(--bw-color-gray-600);
+        --h1-color: var(--bw-color-gray-600);
         --nav-bg-color: var(--bw-color-white-transparent);
-        --p-color: var(--bw-color-gray-senary);
-        --li-color: var(--bw-color-gray-primary);
-        --v-pills-active: var(--bw-color-blue-tertiary);
+        --p-color: var(--bw-color-black-800);
+        --li-color: var(--bw-color-gray-600);
+        --v-pills-active: var(--bw-color-blue-50);
         --accordion-bgcolor: transparent;
-        --bg-color: var(--bw-bgcolor-light-mode);
-        --icon-mode-toogle: var(--bw-color-gray-primary);
-        --border-color: var(--bw-color-gray-quaternary) --icon-mode-toogle-hover: var(--bw-color-gray-primary);
-        --nav-item-color-hover: var(--bw-color-black-primary);
-        --scroll-bar: var(--bw-color-gray-secondary);
-        background-color: var(--bg-color);
+        --icon-mode-toogle: var(--bw-color-gray-600);
+        --border-color: var(--bw-color-black-100);
+        --icon-mode-toogle-hover: var(--bw-color-gray-600);
+        --nav-item-color-hover: var(--bw-color-black-900);
+        --scroll-bar: var(--bw-color-gray-400);
+        --bg-input-color:var(--bw-color-blue-50)
+        background-color: var(--bw-color-white-100);
+        --bg-color: var(--bw-color-white-100);
         --box-shadow-color: var(--bw-color-blue-hsla-primary);
         --bg-hover:var();
 

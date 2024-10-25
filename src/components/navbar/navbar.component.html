@@ -1,26 +1,17 @@
 <header class="header fixed-top"
     [ngClass]="{'dark-mode':themeService.isDarkMode(),'light-mode':!themeService.isDarkMode()} ">
     <nav class="navbar navbar-expand-sm pt-4 pb-4">
-        <div class="navbar-menu-mobile d-flex">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd"
-                aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
-
-                <i class="material-icons">
-                    &#xe5d2;
-                </i>
-            </button>
-        </div>
-
+ 
         <div class="navbar-content d-flex flex-row">
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasMd"
+            <span class="navbar-brand justify-content-center d-flex flex-align-center ms-4">
+                <img [src]="getSafeUrl('https://firebasestorage.googleapis.com/v0/b/bytesworks-a3fec.appspot.com/o/logo%2Flogo.png?alt=media&token=1f3aec6b-e75b-42e8-a0dc-03704ac906b9')" width="60px" height="60px" alt="logo">
+            </span>
+            <div class="offcanvas offcanvas-end d-flex justify-content-center flex-grow-1" tabindex="-1" id="navbarOffcanvasMd"
                 aria-labelledby="navbarOffcanvasMdLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navegação</h5>
 
-                    <i class="material-icons" data-bs-dismiss="offcanvas">
-                        &#xe5cd;
-                    </i>
+                    <ng-icon class="icon" name="matMenu"></ng-icon>
                 </div>
 
                 <ul class="nav nav-pills justify-content-center gap-xl-4 gap-md-5 ">
@@ -41,7 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#faq_section" id="faq">FAQ</a>
                     </li> -->
-                    <li class="nav-item">
+                    <li class="nav-item d-flex justify-content-center">
                         <a class="nav-link" href="#projects_section" id="contact">Projetos</a>
                     </li>
                     <li class="nav-item">
@@ -50,12 +41,15 @@
                 </ul>
 
             </div>
-            <div class="mode-toggle" (click)="toggleTheme()"> <ng-icon size="28px"
+            <div class="nav-mode-toggle d-none d-xl-flex align-items-center" (click)="toggleTheme()"> <ng-icon size="28px"
                     [name]="themeService.isDarkMode() ? 'matWbSunnyOutline': 'tablerMoon'" ></ng-icon>
             </div>
-
-
         </div>
-
+        <div class="navbar-menu-mobile d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd"
+                aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
+                <ng-icon class="icon" name="matMenu" size="2.2rem"></ng-icon>
+            </button>
+        </div>
     </nav>
 </header>

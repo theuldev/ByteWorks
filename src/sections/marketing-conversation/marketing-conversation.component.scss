@@ -2,29 +2,29 @@
 .row {
 
     .col {
-        .hero-text {
-            width: 500px;
-
-            &.--title {
-                font-size: calc(var(--bw-font-size-base) + 2.5rem) !important;
-                font-weight: 700;
-                color: var(--h1-color);
-        
-            }
-
-            &.--description {
-                font-size: calc(var(--bw-font-size-base) + 0.2rem) !important;
-                font-weight: 400;
-                color: var(--p-color);
-            }
-
-        }
-
-        .btn-group {
-            display: flex;
-            margin-top: 40px;
-            
-        }
+      
 
     }
+}
+.hero-text {
+
+    &.--title {
+        font-size: calc(var(--bw-font-size-base) + 2.5rem) !important;
+        font-weight: 700;
+        color: var(--h1-color);
+
+    }
+
+    &.--description {
+        font-size: calc(var(--bw-font-size-base) + 0.1rem) !important;
+        font-weight: 400;
+        color: var(--p-color);
+    }
+
+}
+
+.btn-group {
+    display: flex;
+    margin-top: 40px;
+    
 }

@@ -1,0 +1,15 @@
+.row {
+    .col-12 {}
+}
+
+.--contact-section_title {
+    font-size: calc(var(--bw-font-size-base) + 2rem) !important;
+    font-weight: 700;
+    color: var(--h1-color);
+}
+.text-invalid{
+    color: red;
+    font-size: calc(var(--bw-font-size-base) - 0.2rem);
+    font-weight: 500;
+    letter-spacing: calc(var(--bw-font-letter-spacing) - 0.125px);
+}

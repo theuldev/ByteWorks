@@ -1,17 +1,13 @@
 :root {
-    --bw-color-blue-primary: #198afa;
-    --bw-color-blue-secondary: #64b0fc;
-    --bw-color-blue-tertiary: #EEF3FF;
+    --bw-color-blue-700: #{get-color($blue-palette,700)};
+    --bw-color-blue-300: #{get-color($blue-palette,300)};
+    --bw-color-blue-50: #{get-color($blue-palette,50)};
     --bw-color-blue-hsla-primary:210;
-    --bw-color-black-primary: #0c0c0c;
+    --bw-color-black-900: #{get-color($black-palette,900)};
    
-
-    --bw-color-gray-primary: #2B3238;
-    --bw-color-gray-secondary: #a39fa9;
-    --bw-color-gray-tertiary: #F8F9FA;
-    --bw-color-gray-quaternary: #F6F5F6;
-    --bw-color-gray-quinary: #232125;
-    --bw-color-gray-senary:#151417;
+    --bw-color-black-100: #{get-color($black-palette,100)};
+    --bw-color-black-700: #{get-color($black-palette,700)};
+    --bw-color-black-800:#{get-color($black-palette,800)};
 
 
     --bw-color-green-primary: #202C33;
@@ -21,11 +17,12 @@
     --bw-color-green-tertiary: #8696a0;
     --bw-color-green-quaternary:#25D366;
 
+    --bw-color-gray-400:#{get-color($black-palette,400)};
 
+
+    --bw-color-white-100: #{get-color($black-palette,100)};
+    --bw-color-white-200: #{get-color($black-palette,200)};
     --bw-color-black-transparent: rgb(15, 15, 17, .8);
     --bw-color-white-transparent: rgb(250, 252, 255,.8)
-    --bw-color-white-primary: #FEFEFE;
-    --bw-color-white-secondary: #EFEFF1;
     --bw-color-black-hsla-primary: 202;
-    --bw-color-white-tertiary:#fafcff;
 }

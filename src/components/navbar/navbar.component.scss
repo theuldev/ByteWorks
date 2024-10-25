@@ -7,12 +7,13 @@
    
     .navbar {
 
-        .navbar-menu-mobile {}
 
         .navbar-content {
-            width: 100% !important;
-
-            .mode-toggle {
+            width: 100%;
+            @media (max-width: 576px) {
+                width: 75%;
+            }
+            .nav-mode-toggle {
                 position: relative;
                right: 40px;
 
@@ -31,12 +32,11 @@
 
 
             .offcanvas {
-                .nav {
-                    
+                background-color: var(--bw-bgcolor);
+
+                .nav {  
                     .nav-item {
-    
                         .nav-link {
-        
                             position: relative;
                             font-size: calc(var(--bw-font-size-base) -0.1rem);
                             letter-spacing: calc(var(--bw-font-letter-spacing) + 0.4px);
@@ -44,7 +44,7 @@
                             //text-transform: uppercase;
                             color: var(--nav-item-color);
                             &.active {
-                                color: var(--bw-color-blue-primary);
+                                color: var(--bw-color-blue-700);
                                 background: transparent;
                             }
                         
@@ -54,7 +54,7 @@
                                 height: 5px;
                                 border-radius: 50px;
                                 position: absolute;
-                                background: var(--bw-color-blue-primary);
+                                background: var(--bw-color-blue-700);
                                 bottom: -5px;
                                 left: calc(50% - 5px);
                                 transform-origin: left;
@@ -93,4 +93,7 @@
             }
         }
     }
+}
+.icon{
+    color: var(--bw-color-gray-400);
 }

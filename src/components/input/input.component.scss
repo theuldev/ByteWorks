@@ -1,0 +1,21 @@
+.form-floating {
+    .form-control{
+        border-radius: var(--bw-radius-md);
+        background: var(--bg-input-color);
+        border: 1px solid var( --border-color);
+        color: var(--bw-color-white-200);
+        font-size: calc(var(--bw-font-size-base) - 0.1rem);
+        &:focus{
+            border: 1px solid var(--bw-color-blue-300);
+            box-shadow: none;
+        }
+       
+    }
+    .form-label{
+        color: var(--bw-color-white-200);
+
+        &::after{
+            background-color: transparent;
+        }
+    }
+}
