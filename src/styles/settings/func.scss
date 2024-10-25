@@ -1,0 +1,4 @@
+
+@function get-color($pallete, $shade){
+    @return map-get($pallete, $shade)
+}

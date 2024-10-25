@@ -1,7 +1,97 @@
 <bw-section section_name="contact_section">
-    <div class="row">
-        <div class="col">
+    <div class="row w-100">
 
+        <div class="col-8 col-md-12">
+            <img src="" alt="">
         </div>
+        <div class="col-12 col-xl-4 ">
+            <div class="h1 text-center --contact-section_title">Entre em contato</div>
+            <form [formGroup]="contactForm" class="form mt-4" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col mb-3">
+                        <bw-input label="Nome" formControlName="name" inputName="name" formName type="text"
+                            placeholder=""></bw-input>
+                        <div class="invalid-field mb-2 text-start">
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
+                                O nome é obrigatório
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <bw-input label="Email" inputName="email" type="email" formControlName="email"
+                            placeholder="@gmail.com"></bw-input>
+                        <div class="invalid-field mb-2 text-start">
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+                                O email é obrigatório
+                            </span>
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('email')?.hasError('email')">
+                                O email está inválido
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <bw-input label="Telefone" inputName="phone" type="tel" formControlName="phone"
+                            placeholder=""></bw-input>
+                        <div class="invalid-field mb-2 text-start">
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('phone')?.hasError('required') && contactForm.get('phone')?.touched">
+                                O telefone é obrigatório
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <bw-input label="Cargo" inputName="position" formControlName="position" [inputMaxLength]=1200 type="text"
+                            placeholder=""></bw-input>
+                        <div class="invalid-field mb-2 text-start">
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('position')?.hasError('required') && contactForm.get('position')?.touched">
+                                O cargo é obrigatório
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <bw-input label="Empresa" inputName="enterprise" formControlName="enterprise" [inputMaxLength]=1200 type="text"
+                            placeholder=""></bw-input>
+                        <div class="invalid-field mb-2 text-start">
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('enterprise')?.hasError('required') && contactForm.get('enterprise')?.touched">
+                                A empresa é obrigatório
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <bw-input label="Como podemos ajudar?" inputName="help" formControlName="help" [inputMaxLength]=1200 type="textarea"
+                            placeholder=""></bw-input>
+                        <div class="invalid-field mb-2 text-start">
+                            <span class="text-invalid"
+                                *ngIf="contactForm.get('help')?.hasError('required') && contactForm.get('help')?.touched">
+                                Descreva o que está buscando.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-100">
+                        <bw-button text="Enviar" class="w-100" btn_height="100%" btn_width="100%"
+                            type="submit"></bw-button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
     </div>
 </bw-section>

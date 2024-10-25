@@ -16,4 +16,5 @@ export class ButtonComponent {
  @Input() icon_size:string = "1rem";
  @Input() btn_width!: string;
  @Input() btn_height!: string;
+ @Input() type!: string;
 }

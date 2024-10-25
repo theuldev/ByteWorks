@@ -6,12 +6,14 @@ import { ThemeService } from '../../shared/services/theme.service';
 import { error } from 'console';
 import { tablerMoon } from '@ng-icons/tabler-icons';
 import { matWbSunnyOutline } from '@ng-icons/material-icons/outline';
+import { DomSanitizer } from '@angular/platform-browser';
+import { matMenu } from '@ng-icons/material-icons/baseline';
 @Component({
   selector: 'bw-navbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule, NgIconComponent],
-  viewProviders: [provideIcons({ bootstrapSun, tablerMoon,matWbSunnyOutline })],
+  viewProviders: [provideIcons({ bootstrapSun, tablerMoon,matWbSunnyOutline,matMenu })],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -19,7 +21,7 @@ export class NavbarComponent {
 isDarkMode!:boolean;
 themeService!: ThemeService;
 
-  constructor(private cdref: ChangeDetectorRef,private _themeService: ThemeService) {
+  constructor(private cdref: ChangeDetectorRef,private _themeService: ThemeService, private sanitizer : DomSanitizer  ) {
     this.themeService = _themeService;
    }
   //ngAfterViewInit() {
@@ -33,7 +35,9 @@ themeService!: ThemeService;
   //}
   
 
-
+  getSafeUrl(url: string) {
+    return this.sanitizer.bypassSecurityTrustUrl(url);
+  }
   goToElementWithScroll(event: any) {
     document.getElementById(event.srcElement.id + '_section')?.scrollIntoView();
   }

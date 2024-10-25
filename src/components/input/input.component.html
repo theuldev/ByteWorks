@@ -1,0 +1,20 @@
+<div class="form-floating mb-2">
+    <textarea *ngIf="type === 'textarea'"
+              class="form-control border-0 ps-4"
+              [placeholder]="placeholder"
+              [maxLength]="inputMaxLength"
+              (input)="onInput($event)"
+              (blur)="onTouched()"
+              style="height: 100px">
+    </textarea>
+    <input *ngIf="type !== 'textarea'"
+           class="form-control border-0 ps-4"
+           [mask]="PlaceMask(type)"
+           [value]="value"
+           [type]="type"
+           [placeholder]="placeholder"
+           (input)="onInput($event)"
+           (blur)="onTouched()"/>
+    <label for="floating-input" class="form-label ps-4">{{ label }}</label>
+  </div>
+  
