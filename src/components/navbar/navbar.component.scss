@@ -44,7 +44,7 @@
                             //text-transform: uppercase;
                             color: var(--nav-item-color);
                             &.active {
-                                color: var(--bw-color-blue-700);
+                                color: var(--bw-color-cyan-50);
                                 background: transparent;
                             }
                         
@@ -54,7 +54,7 @@
                                 height: 5px;
                                 border-radius: 50px;
                                 position: absolute;
-                                background: var(--bw-color-blue-700);
+                                background: var(--bw-color-cyan-50);
                                 bottom: -5px;
                                 left: calc(50% - 5px);
                                 transform-origin: left;
@@ -74,7 +74,7 @@
                             position: absolute;
                             height: 3px;
                             border-radius: 5px;
-                            background: var(--pt-color-cyan-primary);
+                            background: var(--bw-color-cyan-50);
                             bottom: -5px;
                             left: 0;
                             transform-origin: left;

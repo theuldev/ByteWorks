@@ -28,3 +28,15 @@
     margin-top: 40px;
     
 }
+.hero-brand-img{
+    animation: Slide_Up 2s alternate infinite;
+}
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

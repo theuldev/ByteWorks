@@ -7,6 +7,7 @@ import { bootstrapWhatsapp } from '@ng-icons/bootstrap-icons';
 import {matClose} from '@ng-icons/material-icons/baseline'
 import { ToastComponent } from '../../components/toast/toast.component';
 import { ButtonComponent } from '../../components/button/button.component';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'bw-marketing-conversation',
@@ -19,7 +20,11 @@ import { ButtonComponent } from '../../components/button/button.component';
 })
 export class MarketingConversationComponent {
 
-
+constructor(private sanitizer : DomSanitizer  ) {
+}
+getSafeUrl(url: string) {
+  return this.sanitizer.bypassSecurityTrustUrl(url);
+}
   goToPlans() {
     document.getElementById('contact_section')?.scrollIntoView();
   }

@@ -1,5 +1,5 @@
 .wrapper {
-    background-color: var(--bg-color);
+    background: radial-gradient(ellipse at bottom, var(--bw-color-dark-blue-800) 0%, var(--bw-color-dark-blue-900) 100%)!important;
     .wrapper-content {
         .container {
           
