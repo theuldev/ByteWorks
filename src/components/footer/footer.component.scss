@@ -1,3 +1,17 @@
 .footer{
     background: transparent;
+    color: var(--bw-color-dark-blue-600);
+}
+.footer-icon{
+     color: var(--bw-color-dark-blue-300);
+     &:hover{
+        color: var(--bw-color-dark-blue-200);
+     }
+}
+
+.p{
+    font-size: calc(var(--bw-font-size-base));
+    font-weight: 500;
+    font-family: var(--bw-font-family-secondary);
+    color: var(--bw-color-dark-blue-300);
 }
