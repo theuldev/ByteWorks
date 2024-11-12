@@ -2,16 +2,16 @@
     width: 400px;
     border: none;
     border-radius: 20px;
-    border: 1px solid var(--border-color);
-    background: var(--bg-color);
-    box-shadow: 0 12px 24px hsla(var(--box-shadow-color), 61%, 16%, .1);
+    border: 1px solid var(-bw-color-dark-blue-800);
+    background: var(--bw-color-dark-blue-900);
+    box-shadow: 0 12px 24px hsla(var(--bw-color-black-hsla-primary), 61%, 16%, .1);
     font-family: var(--bw-font-family-secondary);
 
     .card-body {
         width: 100%;
 
         .card-text {
-            color: var(--p-color);
+            color: var(--bw-color-dark-blue-400);
             text-transform: uppercase;
             font-size: calc(var(--bw-font-size-base) - 0.1rem);
             font-weight: 400;
@@ -26,7 +26,7 @@
             text-align: justify;
             font-size: calc(var(--bw-font-size-base) + 0.9rem);
             font-weight: 600;
-            color: var(--h1-color);
+            color: var(--bw-color-dark-blue-100);
             margin-bottom: 30px;
             padding-left: 10px;
         }
@@ -36,7 +36,7 @@
         .card-plans-advantages {
 
             li {
-                color: var(--li-color);
+                color: var(--bw-color-gray-400);
                 list-style-type: none;
                 display: flex;
                 align-items: center;
@@ -59,7 +59,7 @@
             font-size: calc(var(--bw-font-size-base) + 2.2rem);
             font-weight: 600;
             margin-bottom: 20px;
-            color: var(--h1-color);
+            color: var(--bw-color-dark-blue-100);
 
             .card-price-month {
                 font-size: calc(var(--bw-font-size-base) + 0.2rem);

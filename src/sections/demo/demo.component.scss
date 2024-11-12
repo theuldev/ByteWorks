@@ -4,7 +4,7 @@
             font-size: calc(var(--bw-font-size-base) + 1rem);
             font-weight: 700;
             text-align: center;
-            color: var(--h1-color);
+            color: var(--bw-color-dark-blue-100);
         }
 
         .demo-title-youtube {
@@ -13,7 +13,7 @@
             font-size: calc(var(--bw-font-size-base) + 1.8rem);
             font-weight: 700;
             margin-bottom: 30px;
-            color: var(--h1-color);
+            color: var(--bw-color-dark-blue-100);
 
             .demo-title-emphasis {
                 color: var(--bw-color-blue-700) !important;
@@ -28,7 +28,7 @@
             font-size: calc(var(--bw-font-size-base) + 0.2rem);
             font-weight: 400;
             margin-bottom: 50px;
-            color: var(--p-color);
+            color: var(--bw-color-dark-blue-400);
         }
         .youtube-video{
             text-align: center;
