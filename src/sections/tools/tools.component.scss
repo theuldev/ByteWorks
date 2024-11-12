@@ -6,7 +6,7 @@
             font-size: calc(var(--bw-font-size-base) + 1.8rem);
             font-weight: 800;
             margin-bottom: 100px;
-            color: var(--h1-color);
+            color: var(--bw-color-dark-blue-100);
         }
 
     }
@@ -20,19 +20,19 @@
                 //font-weight: 700;
                 margin-bottom: 30px;
                 letter-spacing: var(--bw-font-letter-spacing) + 0.2px;
-                color: var(--p-color);
+                color: var(--bw-color-dark-blue-400);
             }
 
             .tools_advantages {
                 li {
-                    color: var(--p-color);
+                    color: var(--bw-color-dark-blue-400);
                     list-style-type: none;
                     display: flex;
                     align-items: center;
                     margin-top: 20px;
                     font-size: calc(var(--bw-font-size-base) + 0.2rem);
                     .icon{
-                        color: var(--icon-mode-toogle);
+                        color: var(--bw-color-cyan-50);
                         margin-right: 5px;
                         
                     }

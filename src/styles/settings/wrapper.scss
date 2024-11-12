@@ -9,11 +9,11 @@
     }
 
     ::-webkit-scrollbar-track {
-      background: var(--bg-color);
+      background: var(--bw-color-dark-blue-900);
     }
 
     ::-webkit-scrollbar-thumb {
-      background-color: var(--scroll-bar);
+      background-color: var(--bw-color-dark-blue-600);
       border-radius: 20px;
       width: 2px;
   

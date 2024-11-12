@@ -11,14 +11,14 @@
     &.--title {
         font-size: calc(var(--bw-font-size-base) + 2.5rem) !important;
         font-weight: 700;
-        color: var(--h1-color);
+        color: var(--bw-color-dark-blue-100);
 
     }
 
     &.--description {
         font-size: calc(var(--bw-font-size-base) + 0.1rem) !important;
         font-weight: 400;
-        color: var(--p-color);
+        color: var(--bw-color-dark-blue-400);
     }
 
 }

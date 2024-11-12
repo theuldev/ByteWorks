@@ -17,7 +17,7 @@
 
             .card-body {
                 font-family: var(--bw-font-family-primary);
-                color: var(--p-color);
+                color: var(--bw-color-dark-blue-400);
 
 
                 .card-text {
@@ -26,7 +26,7 @@
 
 
                     &.--year {
-                        color: var(--p-color);
+                        color: var(--bw-color-dark-blue-400);
                         font-weight: 700;
                         font-size: calc(var(--bw-font-size-base) - 0.2rem);
                     }
@@ -38,7 +38,7 @@
                     }
 
                     &.--subtitle {
-                        color: var(--p-color);
+                        color: var(--bw-color-dark-blue-400);
                         font-weight: 600;
                         font-size: calc(var(--bw-font-size-base) - 0.025rem);
                        

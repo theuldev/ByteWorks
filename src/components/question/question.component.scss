@@ -7,7 +7,7 @@
     .accordion-item {
         width: 100%;
         border-bottom: 1px solid var(--bw-color-black-100);
-        background: var(--accordion-bgcolor);
+        background: var(--bw-bgcolor-dark-mode);
         .accordion-header {
             width: 100%;
             height: 75px;
@@ -16,8 +16,8 @@
     
             align-items: center;
             .accordion-button{
-                background: var(--accordion-bgcolor);
-                color: var(--h1-color);
+                background: var(--bw-bgcolor-dark-mode);
+                color: var(--bw-color-dark-blue-100);
                 font-weight: 500;
                 font-size: calc(var(--bw-font-size-base));
                 text-align: start;
@@ -42,7 +42,7 @@
             }
         }
         .accordion-body{
-            color: var(--p-color);
+            color: var(--bw-color-dark-blue-400);
         }
     }
 }

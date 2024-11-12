@@ -10,7 +10,7 @@
                 
 
                 .tab-item-title {
-                    color: var(--h1-color);
+                    color: var(--bw-color-dark-blue-100);
                     font-size: calc(var(--bw-font-size-base) + 0.5rem);
                     font-weight: 700;
                     text-transform: capitalize;
@@ -22,7 +22,7 @@
 
                 &.show {
                     &.active {
-                        background: var(--v-pills-active) !important;
+                        background: var(--bw-color-black-800) !important;
                     
 
                     }
@@ -33,7 +33,7 @@
                     //display: none;
                     opacity: 0;
                     .tab-item-subtitle {
-                        color: var(--p-color);
+                        color: var(--bw-color-dark-blue-400);
                         font-size: calc(var(--bw-font-size-base) + 0.2rem);
 
 
@@ -68,7 +68,7 @@
             font-size: calc(var(--bw-font-size-base) + 1.8rem);
             font-weight: 800;
             margin-bottom: 100px;
-            color: var(--h1-color);
+            color: var(--bw-color-dark-blue-100);
 
             animation: Slide_PseudoElement_To_Up 2.4s ease;
 

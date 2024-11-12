@@ -1,7 +1,7 @@
 .navbar {
     font-family: var(--bw-font-family-primary);
-    background: var(--nav-bg-color);
-    border-bottom: 1px solid var(--border-color);
+    background: var(--bw-color-black-transparent);
+    border-bottom: 1px solid var(-bw-color-dark-blue-800);
     font-family: var(--bw-font-family-secondary);
     backdrop-filter: blur(2px);
 
@@ -18,11 +18,11 @@
             right: 40px;
 
 
-            color: var(--icon-mode-toogle);
+            color: var(--bw-color-cyan-50);
 
             &:hover {
 
-                color: var(--icon-mode-toogle-hover);
+                color: var(--bw-color-cyan-50-hover);
                 transition: color 0.5s;
 
 
@@ -58,7 +58,7 @@
                         letter-spacing: calc(var(--bw-font-letter-spacing) + 0.4px);
                         font-weight: 600;
 
-                        color: var(--nav-item-color);
+                        color: var(--bw-color-dark-blue-100);
 
                         &.active {
                             color: var(--bw-color-cyan-50);

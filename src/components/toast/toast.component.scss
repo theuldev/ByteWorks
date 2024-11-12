@@ -1,23 +1,23 @@
 .toast{
     animation: Slide_Up 2.4s ease;
-    background-color: var(--bg-color);
-    border: 1px solid var(--border-color);
+    background-color: var(--bw-color-dark-blue-900);
+    border: 1px solid var(-bw-color-dark-blue-800);
     .toast-header{
     
-        background-color: var(--bg-color);
-        color: var(--h1-color);
+        background-color: var(--bw-color-dark-blue-900);
+        color: var(--bw-color-dark-blue-100);
         .whatsapp-icon{
             color: var(--bw-color-green-quaternary);
             margin: 5px;
         }
         .btn{
             .close-icon{
-                color: var(--h1-color);
+                color: var(--bw-color-dark-blue-100);
             }
         }
     }
     .toast-body{
-        color: var(--p-color);
+        color: var(--bw-color-dark-blue-400);
     }
 }
 @keyframes Slide_Up {
