@@ -42,22 +42,18 @@ export class CarouselComponent {
   swipeThreshold = 50;
   direction: 'left' | 'right' | 'center' = 'center';
 
-  // Detectar início do toque
   onTouchStart(event: TouchEvent) {
     this.touchStartX = event.changedTouches[0].pageX;
   }
 
-  // Detectar fim do toque e verificar direção
   onTouchEnd(event: TouchEvent) {
     this.touchEndX = event.changedTouches[0].pageX;
     const deltaX = this.touchStartX - this.touchEndX;
 
     if (Math.abs(deltaX) > this.swipeThreshold) {
       if (deltaX > 0) {
-        // Arrastou para a esquerda
         this.slideTo(this.currentIndex + 1, 'left');
       } else {
-        // Arrastou para a direita
         this.slideTo(this.currentIndex - 1, 'right');
       }
     }
@@ -67,9 +63,8 @@ export class CarouselComponent {
   slideTo(index: number, direction: 'left' | 'right' | 'center') {
     console.log(`Direção: ${direction}`);
     if (index >= 0 && index < this.list.length) {
-      // Se direção for inválida, use 'center' como padrão
-      this.direction = direction || 'center';  // 'center' será o fallback
-      console.log(`Atualizando para o índice: ${index} com direção: ${this.direction}`);
+      this.direction = direction || 'center';
+      //console.log(`Atualizando para o índice: ${index} com direção: ${this.direction}`);
       this.currentIndex = index;
     }
   }
