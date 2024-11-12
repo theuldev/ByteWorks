@@ -3,7 +3,7 @@ html {
     &.dark-mode {
 
         --h1-color: var(--bw-color-dark-blue-100);
-        --nav-item-color: var(--bw-color-gray-400);
+        --nav-item-color: var(--bw-color-dark-blue-100);
         --p-color: var(--bw-color-dark-blue-400);
         --li-color: var(--bw-color-gray-400);
         --v-pills-active: var(--bw-color-black-800);
@@ -13,7 +13,6 @@ html {
         --border-color: var(--bw-color-dark-blue-800);
         --bg-input-color:var(--bw-color-dark-blue-700);
         --scroll-barhover: var(--bw-color-white-200);
-        --nav-item-color-hover: var(--bw-color-white-200);
         --scroll-bar: var(--bw-color-dark-blue-600);
         --bg-color: var(--bw-color-dark-blue-900);
         --box-shadow-color: var(--bw-color-black-hsla-primary);

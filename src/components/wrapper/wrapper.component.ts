@@ -7,11 +7,12 @@ import { bootstrapWhatsapp } from '@ng-icons/bootstrap-icons';
 import { text } from 'stream/consumers';
 import { Router } from '@angular/router';
 import { FooterComponent } from "../footer/footer.component";
+import { NavbarComponent } from "../navbar/navbar.component";
 
 @Component({
   selector: 'bw-wrapper',
   standalone: true,
-  imports: [HeaderComponent, CommonModule, NgIcon, FooterComponent],viewProviders: [provideIcons({ bootstrapWhatsapp})],
+  imports: [HeaderComponent, CommonModule, NgIcon, FooterComponent, NavbarComponent],viewProviders: [provideIcons({ bootstrapWhatsapp})],
   templateUrl: './wrapper.component.html',
   styleUrl: './wrapper.component.scss'
 })

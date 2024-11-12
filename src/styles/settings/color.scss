@@ -3,12 +3,14 @@
     --bw-color-blue-300: #{get-color($blue-palette,300)};
     --bw-color-blue-50: #{get-color($blue-palette,50)};
     --bw-color-blue-hsla-primary:210;
-    --bw-color-black-900: #{get-color($black-palette,900)};
-   
+
+    --bw-color-black-50: #{get-color($black-palette,50)};
     --bw-color-black-100: #{get-color($black-palette,100)};
+    --bw-color-black-400:#{get-color($black-palette,400)};
+    --bw-color-black-500:#{get-color($black-palette,500)};
     --bw-color-black-700: #{get-color($black-palette,700)};
     --bw-color-black-800:#{get-color($black-palette,800)};
-
+    --bw-color-black-900: #{get-color($black-palette,900)};
 
     --bw-color-green-primary: #202C33;
 
@@ -28,8 +30,12 @@
     --bw-color-dark-blue-800:#{get-color($dark-blue-palette,800)};
     --bw-color-dark-blue-900:#{get-color($dark-blue-palette,900)};
 
+    --bw-color-blue-900:#{get-color($blue-palette,900)};
+
+
     --bw-color-cyan-50: #{get-color($cyan-palette, 50)};
-    
+    --bw-color-cyan-900: #{get-color($cyan-palette, 900)};
+    --bw-color-cyan-1000: #{get-color($cyan-palette, 1000)};
     --bw-color-white-100: #{get-color($black-palette,100)};
     --bw-color-white-200: #{get-color($black-palette,200)};
     --bw-color-dark-blue-transparent: rgb(17, 20, 28, .4)

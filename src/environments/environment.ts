@@ -9,6 +9,6 @@ export const environment = {
     appId: "1:481520431694:web:f1d5576171ab662d8d091f",
     measurementId: "G-ZHDBWF3H5H"
   },
-  apiEmail: 'https://localhost:7281/api'
+  apiEmail: 'http://ec2-18-231-187-244.sa-east-1.compute.amazonaws.com:5000/api'
 };
 

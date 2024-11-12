@@ -1,22 +1,28 @@
-<header class="header fixed-top"
-    [ngClass]="{'dark-mode':themeService.isDarkMode(),'light-mode':!themeService.isDarkMode()} ">
-    <nav class="navbar navbar-expand-sm pt-4 pb-4">
- 
-        <div class="navbar-content d-flex flex-row">
+<header class= "navbar navbar-expand-lg pt-4 pb-4 fixed-top">
+    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap w-100">
+        
             <span class="navbar-brand justify-content-center d-flex flex-align-center ms-4">
-                <img [src]="getSafeUrl('https://firebasestorage.googleapis.com/v0/b/bytesworks-a3fec.appspot.com/o/logo%2Flogo.png?alt=media&token=1f3aec6b-e75b-42e8-a0dc-03704ac906b9')" width="60px" height="60px" alt="logo">
+                <img [ngSrc]="getSafeUrl('https://firebasestorage.googleapis.com/v0/b/bytesworks-a3fec.appspot.com/o/logo%2Flogo.png?alt=media&token=1f3aec6b-e75b-42e8-a0dc-03704ac906b9')"
+                    priority="fetchpriority=high" width="60" height="60" alt="logo">
             </span>
-            <div class="offcanvas offcanvas-end d-flex justify-content-center flex-grow-1" tabindex="-1" id="navbarOffcanvasMd"
-                aria-labelledby="navbarOffcanvasMdLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navegação</h5>
-
-                    <ng-icon class="icon" name="matMenu"></ng-icon>
-                </div>
-
-                <ul class="nav nav-pills justify-content-center gap-xl-4 gap-md-5 ">
+            <div class="d-flex d-lg-none p-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+                    aria-controls="navbarOffcanvas" aria-label="Toggle navigation">
+                    <ng-icon class="icon" name="matMenu" size="2.2rem"></ng-icon>
+                </button>
+            </div>
+            <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1"
+                id="navbarOffcanvas" data-bs-backdrop="static" aria-labelledby="navbarOffcanvasMdLabel" aria-modal="true" data-bs-toggle="true" role="dialog">
+                <div class="offcanvas-header px-4 pb-0">
                     
-                    <!-- <li class="nav-item">
+                    <ng-icon class="icon ms-auto" name="matClose" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#navbarOffcanvas" size="2.2rem"></ng-icon>
+                   
+                </div>
+                <hr class="d-lg-none text-white-50">
+                <div class="offcanvas-body d-flex align-items-center justify-content-center">
+                    <ul class="navbar-nav gap-3">
+
+                        <!-- <li class="nav-item">
                         <a class="nav-link" href="#examples_section" id="examples">Exemplos</a>
                     </li>
                     <li class="nav-item">
@@ -32,24 +38,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#faq_section" id="faq">FAQ</a>
                     </li> -->
-                    <li class="nav-item d-flex justify-content-center">
-                        <a class="nav-link" href="#projects_section" id="projects">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact_section" id="contact">Contato</a>
-                    </li>
-                </ul>
-
+                        <li class="nav-item text-center col">
+                            <a class="nav-link" href="#projects_section" id="projects">Projetos</a>
+                        </li>
+                        <li class="nav-item text-center col">
+                            <a class="nav-link" href="#our_services_section" id="our_services">Serviços</a>
+                        </li>
+                        <li class="nav-item text-center col">
+                            <a class="nav-link" href="#contact_section" id="contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="d-lg-none text-center pb-4">
+                    <img class="offcanvas-logo" [ngSrc]="getSafeUrl('https://firebasestorage.googleapis.com/v0/b/bytesworks-a3fec.appspot.com/o/logo%2Flogo.png?alt=media&token=1f3aec6b-e75b-42e8-a0dc-03704ac906b9')"
+                    priority="fetchpriority=high" width="60" height="60" alt="logo">
+                </div>
             </div>
             <!-- <div class="nav-mode-toggle d-none d-xl-flex align-items-center" (click)="toggleTheme()"> <ng-icon size="28px"
                     [name]="themeService.isDarkMode() ? 'matWbSunnyOutline': 'tablerMoon'" ></ng-icon>
             </div> -->
-        </div>
-        <div class="navbar-menu-mobile d-flex">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd"
-                aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
-                <ng-icon class="icon" name="matMenu" size="2.2rem"></ng-icon>
-            </button>
-        </div>
+      
     </nav>
 </header>

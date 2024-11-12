@@ -1,0 +1,54 @@
+.card {
+    font-family: var(--bw-font-family-primary);
+    font-weight: 700;
+
+    border-radius: 15px;
+    transition: all 0.7s;
+    min-height: 2rem;
+    background: var(--bw-color-blue-900);
+
+    &:hover {
+        // box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        // background: #0c0d1331;
+        backdrop-filter: blur(6px);
+        background: linear-gradient(60deg, rgba(35, 38, 41, 0.9) 0%, rgba(64, 64, 64, .09) 100%);
+
+    }
+    .card-header{
+        .card-quote{
+            .quote-icon{
+                color: var(--bw-color-dark-blue-100);
+
+            }
+        }
+    }
+
+    .card-body {
+        font-family: var(--bw-font-family-tertiary);
+        .card-title{
+            font-size: calc(var(--bw-font-size-base) + 0.4rem);
+            font-weight: 700;
+            text-align: center;
+
+            letter-spacing: calc(var(--bw-font-word-spacing) - 0.9rem);
+            color: var(--bw-color-dark-blue-200);
+        }
+        .card-subtitle{
+            color: var(--bw-color-dark-blue-400);
+            font-weight: 600;
+            opacity: 60%;
+            font-size: calc(var(--bw-font-size-base) - 0.125rem);
+        }
+        .card-footer{
+            color: var(--bw-color-dark-blue-400);
+            font-weight: 500;
+        }
+    }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+   
+}
