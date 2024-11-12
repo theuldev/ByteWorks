@@ -12,11 +12,11 @@
                 max-height: 260px;
 
                 border-radius: 10px;
-                filter: drop-shadow(0 0 0.20rem var(--pt-color-gray-primary));
+                //filter: drop-shadow(0 0 0.20rem var(--pt-color-gray-primary));
             }
 
             .card-body {
-                font-family: var(--pt-font-family-primary);
+                font-family: var(--bw-font-family-primary);
                 color: var(--p-color);
 
 
@@ -26,21 +26,21 @@
 
 
                     &.--year {
-                        color: var(--pt-color-blue-tertiary);
-                        font-weight: 600;
-                        font-size: calc(var(--pt-font-size-base) - 0.2rem);
+                        color: var(--p-color);
+                        font-weight: 700;
+                        font-size: calc(var(--bw-font-size-base) - 0.2rem);
                     }
 
                     &.--title {
-                        color: var(--pt-color-white-secondary);
+                        color: var( --bw-color-dark-blue-100);
                         font-weight: 600;
-                        font-size: calc(var(--pt-font-size-base) + 0.1rem);
+                        font-size: calc(var(--bw-font-size-base) + 0.1rem);
                     }
 
                     &.--subtitle {
-                        color: var(--pt-color-blue-tertiary);
+                        color: var(--p-color);
                         font-weight: 600;
-                        font-size: calc(var(--pt-font-size-base) - 0.025rem);
+                        font-size: calc(var(--bw-font-size-base) - 0.025rem);
                        
                         hyphens: auto;
                         text-align: justify;

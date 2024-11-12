@@ -28,3 +28,38 @@
     margin-top: 40px;
     
 }
+.hero-brand-img{
+    animation: Slide_Up 2s alternate infinite;
+}
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.hero-brand-chunk-1{
+    animation: Slide_Right 3s ease;
+}
+@keyframes Slide_Right {
+    0% {
+
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_Left {
+    0% {
+
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

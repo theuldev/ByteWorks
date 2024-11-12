@@ -1,15 +1,15 @@
 .badge {
-    background-color: var(--bw-color-cyan-secondary);
-    font-size: calc(var(--bw-font-size-base) - 0.250rem);
-    font-family: var(--bw-font-family-primary);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: var(--bw-color-cyan-primary);
-    margin: 2px;
-    transition: background 0.5s ease;
-    &:hover {
-    
-      background: var(--bw-color-cyan-tertiary);
-    }
+  background-color:  var(--bw-color-cyan-900);
+  font-size: calc(var(--bw-font-size-base) - 0.250rem);
+  font-family: var(--bw-font-family-primary);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: var(--bw-color-cyan-50);
+  margin: 2px;
+  transition: background 0.5s ease;
+  &:hover {
+  
+    background-color:  var(--bw-color-cyan-1000);
+  }
 }

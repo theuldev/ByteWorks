@@ -3,26 +3,19 @@
     --pt-main-content: var(--pt-main-wrapper) - 77px;
     overflow-x: hidden;
   
-  
-    /* width */
     ::-webkit-scrollbar {
-      width: 12px;
+      width: 8px;
+
     }
-  
-    /* Track */
+
     ::-webkit-scrollbar-track {
-  
+      background: var(--bg-color);
     }
-  
-    /* Handle */
+
     ::-webkit-scrollbar-thumb {
-  
       background-color: var(--scroll-bar);
       border-radius: 20px;
-      width: 4px;
+      width: 2px;
   
     }
-  
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {}
   }

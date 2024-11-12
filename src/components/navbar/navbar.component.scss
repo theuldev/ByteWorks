@@ -1,87 +1,119 @@
-.header {
+.navbar {
     font-family: var(--bw-font-family-primary);
     background: var(--nav-bg-color);
     border-bottom: 1px solid var(--border-color);
     font-family: var(--bw-font-family-secondary);
     backdrop-filter: blur(2px);
-   
-    .navbar {
+
+    .container-xxl {
+
+        width: 100%;
+
+        @media (max-width: 576px) {
+            width: 75%;
+        }
+
+        .nav-mode-toggle {
+            position: relative;
+            right: 40px;
 
 
-        .navbar-content {
-            width: 100%;
-            @media (max-width: 576px) {
-                width: 75%;
-            }
-            .nav-mode-toggle {
-                position: relative;
-               right: 40px;
+            color: var(--icon-mode-toogle);
 
-
-               color:var(--icon-mode-toogle);
-
-               &:hover{
+            &:hover {
 
                 color: var(--icon-mode-toogle-hover);
                 transition: color 0.5s;
-             
 
-               }
+
+            }
+        }
+
+
+
+        .offcanvas-lg {
+            .offcanvas-header {
+                .offcanvas-title {
+                    color: var(--bw-color-dark-blue-100);
+                }
+
+                .btn-close {
+                    color: var(--bw-color-dark-blue-100);
+                }
+                .offcanvas-logo{
+                    
+                }
             }
 
+            .offcanvas-body {
 
+                //background-color: var(--bw-color-dark-blue-100);
+                .navbar-nav {
+                    list-style-type: none;
 
-            .offcanvas {
-                background-color: var(--bw-bgcolor);
+                    .nav-link {
 
-                .nav {  
-                    .nav-item {
-                        .nav-link {
-                            position: relative;
-                            font-size: calc(var(--bw-font-size-base) -0.1rem);
-                            letter-spacing: calc(var(--bw-font-letter-spacing) + 0.4px);
-                            font-weight:600;
-                            //text-transform: uppercase;
-                            color: var(--nav-item-color);
-                            &.active {
-                                color: var(--bw-color-blue-700);
-                                background: transparent;
-                            }
-                        
-                            &.active:after {
-                                content: '';
-                                width: 5px;
-                                height: 5px;
-                                border-radius: 50px;
-                                position: absolute;
-                                background: var(--bw-color-blue-700);
-                                bottom: -5px;
-                                left: calc(50% - 5px);
-                                transform-origin: left;
-                                transition: transform .5s ease;
-                                transform: scaleX(1);
-                            }
+                        position: relative;
+                        font-size: calc(var(--bw-font-size-base) -0.1rem);
+                        letter-spacing: calc(var(--bw-font-letter-spacing) + 0.4px);
+                        font-weight: 600;
 
-                            &:hover{
-                                color: var(--nav-item-color-hover);
-                                transition: all 0.5s ease;
-                                //font-weight: 800;
-                            }
+                        color: var(--nav-item-color);
+
+                        &.active {
+                            color: var(--bw-color-cyan-50);
+                            background: transparent;
                         }
-                        .nav-link:after {
+
+
+                        border-bottom: 3px solid transparent;
+
+                        &:hover {
+                            color: var(--bw-color-cyan-50);
+                        }
+
+
+                        &.active:after {
+                            content: '';
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50px;
+                            position: absolute;
+                            background: var(--bw-color-cyan-50);
+                            bottom: -5px;
+                            left: calc(50% - 5px);
+                            transform-origin: left;
+                            transition: transform .5s ease;
+                            transform: scaleX(1);
+                        }
+
+                        &:after {
                             content: '';
                             width: 100%;
                             position: absolute;
                             height: 3px;
                             border-radius: 5px;
-                            background: var(--pt-color-cyan-primary);
+                            background: var(--bw-color-cyan-50);
                             bottom: -5px;
                             left: 0;
                             transform-origin: left;
                             transition: transform .5s ease;
                             transform: scaleX(0);
                         }
-                        
+                    }
+
+
+
+                    .nav-item {
+                        &:hover {
+                            cursor: pointer;
+
+                            .nav-link:after {
+                                transform: scaleX(1);
+                            }
+
+
+                        }
                     }
 
                     .nav-links {
@@ -94,6 +126,34 @@
         }
     }
 }
-.icon{
-    color: var(--bw-color-gray-400);
+
+
+.icon {
+    color: var(--bw-color-dark-blue-100)
+}
+
+@media(max-width: 992px) {
+    .offcanvas-lg {
+        background-color: var(--bw-color-dark-blue-800);
+        height: 100vh;
+    }
+
+    .nav-link {
+        &:hover {}
+
+        &:after {
+            opacity: 0;
+        }
+
+        &.active {
+
+
+
+            &.active:after {
+
+                opacity: 0;
+
+            }
+        }
+    }
 }

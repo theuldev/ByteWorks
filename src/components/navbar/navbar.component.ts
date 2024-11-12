@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, EventEmitter, Output, AfterViewInit, ChangeDetectorRef, ChangeDetectionStrategy, inject } from '@angular/core';
 import { bootstrapMoon, bootstrapSun, bootstrapSunFill } from '@ng-icons/bootstrap-icons';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
@@ -7,13 +7,13 @@ import { error } from 'console';
 import { tablerMoon } from '@ng-icons/tabler-icons';
 import { matWbSunnyOutline } from '@ng-icons/material-icons/outline';
 import { DomSanitizer } from '@angular/platform-browser';
-import { matMenu } from '@ng-icons/material-icons/baseline';
+import { matMenu,matClose } from '@ng-icons/material-icons/baseline';
 @Component({
   selector: 'bw-navbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [CommonModule, NgIconComponent],
-  viewProviders: [provideIcons({ bootstrapSun, tablerMoon,matWbSunnyOutline,matMenu })],
+  imports: [CommonModule, NgIconComponent,NgOptimizedImage],
+  viewProviders: [provideIcons({ bootstrapSun, tablerMoon,matWbSunnyOutline,matMenu,matClose  })],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

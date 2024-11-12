@@ -1,15 +1,13 @@
 <div class="wrapper">
-    <bw-header></bw-header>
+    <bw-navbar></bw-navbar>
     <main class="wrapper-content">
-        
-        <div class="container" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
-            
+        <div class="container" data-bs-spy="scroll" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
             <ng-content></ng-content>
-            <a [href]="link_whatsapp" target="_blank" class="btn btn-floating __whatsapp z-3 fixed-bottom p-4" style="justify-self: end;">
-                <ng-icon name="bootstrapWhatsapp" size="2.5rem" color="#25D366"></ng-icon>
+            <a [href]="link_whatsapp" target="_blank" class="btn btn-floating __whatsapp z-3 fixed-bottom p-4 d-none d-md-block" style="justify-self: end;">
+                <ng-icon class="icon-whatsapp" name="bootstrapWhatsapp" size="2.5rem" color="#25D366"></ng-icon>
              </a>
-         
         </div>
  
     </main>
+    <bw-footer></bw-footer>
 </div>

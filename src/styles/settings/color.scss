@@ -3,12 +3,14 @@
     --bw-color-blue-300: #{get-color($blue-palette,300)};
     --bw-color-blue-50: #{get-color($blue-palette,50)};
     --bw-color-blue-hsla-primary:210;
-    --bw-color-black-900: #{get-color($black-palette,900)};
-   
+
+    --bw-color-black-50: #{get-color($black-palette,50)};
     --bw-color-black-100: #{get-color($black-palette,100)};
+    --bw-color-black-400:#{get-color($black-palette,400)};
+    --bw-color-black-500:#{get-color($black-palette,500)};
     --bw-color-black-700: #{get-color($black-palette,700)};
     --bw-color-black-800:#{get-color($black-palette,800)};
-
+    --bw-color-black-900: #{get-color($black-palette,900)};
 
     --bw-color-green-primary: #202C33;
 
@@ -19,9 +21,24 @@
 
     --bw-color-gray-400:#{get-color($black-palette,400)};
 
+    --bw-color-dark-blue-100:#{get-color($dark-blue-palette,100)};
+    --bw-color-dark-blue-200:#{get-color($dark-blue-palette,200)};
+    --bw-color-dark-blue-300:#{get-color($dark-blue-palette,300)};
+    --bw-color-dark-blue-400:#{get-color($dark-blue-palette,400)};
+    --bw-color-dark-blue-600:#{get-color($dark-blue-palette,600)};
+    --bw-color-dark-blue-700:#{get-color($dark-blue-palette,700)};
+    --bw-color-dark-blue-800:#{get-color($dark-blue-palette,800)};
+    --bw-color-dark-blue-900:#{get-color($dark-blue-palette,900)};
 
+    --bw-color-blue-900:#{get-color($blue-palette,900)};
+
+
+    --bw-color-cyan-50: #{get-color($cyan-palette, 50)};
+    --bw-color-cyan-900: #{get-color($cyan-palette, 900)};
+    --bw-color-cyan-1000: #{get-color($cyan-palette, 1000)};
     --bw-color-white-100: #{get-color($black-palette,100)};
     --bw-color-white-200: #{get-color($black-palette,200)};
+    --bw-color-dark-blue-transparent: rgb(17, 20, 28, .4)
     --bw-color-black-transparent: rgb(15, 15, 17, .8);
     --bw-color-white-transparent: rgb(250, 252, 255,.8)
     --bw-color-black-hsla-primary: 202;
