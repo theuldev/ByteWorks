@@ -1,10 +1,10 @@
-
 .navbar {
     font-family: var(--bw-font-family-primary);
     background: var(--bw-color-black-transparent);
     border-bottom: 1px solid var(-bw-color-dark-blue-800);
     font-family: var(--bw-font-family-secondary);
     backdrop-filter: blur(2px);
+
     .container-xxl {
 
 
@@ -29,8 +29,11 @@
         }
 
 
-
+        .logo-container{
+        }
         .offcanvas-lg {
+
+
             .offcanvas-header {
                 .offcanvas-title {
                     color: var(--bw-color-dark-blue-100);
@@ -39,9 +42,8 @@
                 .btn-close {
                     color: var(--bw-color-dark-blue-100);
                 }
-                .offcanvas-logo{
-                    
-                }
+
+                .offcanvas-logo {}
             }
 
             .offcanvas-body {
@@ -130,12 +132,13 @@
 .icon {
     color: var(--bw-color-dark-blue-100)
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none;
 }
 
 @media(max-width: 992px) {
-    
+
     .offcanvas-lg {
         background-color: var(--bw-color-dark-blue-800);
         height: 100vh;
