@@ -1,9 +1,9 @@
-<div class="cards-container -desktop d-none d-md-flex flex-column flex-md-row gap-3">
+<div class="cards-container -desktop d-none d-xl-flex flex-column flex-md-row gap-3">
   <ng-container *ngFor="let item of list">
     <ng-container *ngTemplateOutlet="itemTemplate; context: { item: item }"></ng-container>
   </ng-container>
 </div>
 
-<div class="cards-container -mobile -carousel d-flex d-md-none">
+<div class="cards-container -mobile -carousel d-flex d-xl-none">
   <bw-carousel class="mw-100" [list]="list" [itemTemplate]="itemTemplate"></bw-carousel>
 </div>

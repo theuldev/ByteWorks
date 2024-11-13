@@ -82,3 +82,8 @@
         transform: translateX(-8px);
     }
 }
+@media(max-width: 395px) {
+    .wrapper-content{
+        padding-top: 100px;
+    }
+}
