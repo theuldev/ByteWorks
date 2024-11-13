@@ -1,10 +1,11 @@
+
 .navbar {
     font-family: var(--bw-font-family-primary);
     background: var(--bw-color-black-transparent);
     border-bottom: 1px solid var(-bw-color-dark-blue-800);
     font-family: var(--bw-font-family-secondary);
     backdrop-filter: blur(2px);
-
+    max-width: 100%;
     .container-xxl {
 
         width: 100%;
@@ -131,7 +132,9 @@
 .icon {
     color: var(--bw-color-dark-blue-100)
 }
-
+.navbar-toggler{
+    border: none;
+}
 @media(max-width: 992px) {
     .offcanvas-lg {
         background-color: var(--bw-color-dark-blue-800);
