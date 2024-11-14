@@ -13,11 +13,14 @@ import { ContactComponent } from "../../sections/contact/contact.component";
 import { ProjectsComponent } from '../../sections/projects/projects.component';
 import { OurServicesComponent } from "../../sections/our-services/our-services.component";
 import { TestimonialsComponent } from "../../sections/testimonials/testimonials.component";
+import { OurServicesTestimonialsComponent } from "../../sections/our-services-testimonials/our-services-testimonials.component";
+import { GotoUpToastComponent } from "../../components/goto-up-toast/goto-up-toast.component";
+import { WhatsappToastComponent } from "../../components/whatsapp-toast/whatsapp-toast.component";
 
 @Component({
   selector: 'bw-home',
   standalone: true,
-  imports: [CommonModule, WrapperComponent, MarketingConversationComponent, PlansComponent, FaqComponent, ToolsComponent, ExamplesComponent, DemoComponent, ToastComponent, ContactComponent, ProjectsComponent, OurServicesComponent, TestimonialsComponent],
+  imports: [CommonModule, WrapperComponent, MarketingConversationComponent, PlansComponent, FaqComponent, ToolsComponent, ExamplesComponent, DemoComponent, ToastComponent, ContactComponent, ProjectsComponent, OurServicesComponent, TestimonialsComponent, OurServicesTestimonialsComponent, GotoUpToastComponent, WhatsappToastComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -6,7 +6,12 @@
     display: flex;
     justify-content: center;
     font-family: var(--bw-font-family-primary)!important;
+    transition: opacity 0.8s;
     .btn-text {
         font-weight: 600;
+    }
+    &:hover{
+        opacity: 0.7;
+     
     }
 }

@@ -12,9 +12,11 @@
   justify-content: center;
   align-items: center;  // Para centralizar o conteúdo dentro do card
 
+
 }
 .carousel {
   display: flex;
+  margin: 0 auto;
 }
 .dot {
   width: 5px;
@@ -34,4 +36,13 @@
     background-color: #555;
     transform: scale(1.2);
   }
+}
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

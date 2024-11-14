@@ -1,0 +1,44 @@
+    
+<bw-section section_name="our_services_testimonials_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="h1 mb-4 mt-5">
+                    Nossos Serviços
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-12 mw-100">
+                        <bw-cards [showCarousel]="false" [list]="services" [showArrows] ="false">
+                            <ng-template let-item="item">
+                                <bw-card-service [item]="item"></bw-card-service>
+                            </ng-template>
+                        </bw-cards>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h1 mb-4 mt-5">
+                    O que nossos clientes falam sobre nós?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-12 mw-100">
+                    <bw-cards [showCarousel]="true" [list]="testimonials"  [showArrows] ="true">
+                        <ng-template let-item="item">
+                            <bw-card-testimonials [item]="item"></bw-card-testimonials>
+                        </ng-template>
+                    </bw-cards>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</bw-section>

@@ -1,9 +1,11 @@
-<div class="cards-container -desktop d-none d-xl-flex flex-column flex-md-row gap-3">
+<div class="cards-container" 
+     [ngClass]="{'d-flex flex-column flex-md-row gap-3': !shouldShowCarousel, 'd-none': shouldShowCarousel}">
   <ng-container *ngFor="let item of list">
     <ng-container *ngTemplateOutlet="itemTemplate; context: { item: item }"></ng-container>
   </ng-container>
 </div>
 
-<div class="cards-container -mobile -carousel d-flex d-xl-none">
-  <bw-carousel class="mw-100" [list]="list" [itemTemplate]="itemTemplate"></bw-carousel>
+<div class="cards-container -carousel" 
+     [ngClass]="{'d-flex': shouldShowCarousel, 'd-none': !shouldShowCarousel}">
+  <bw-carousel [showArrows]="showArrows" class="mw-100" [list]="list" [itemTemplate]="itemTemplate"></bw-carousel>
 </div>

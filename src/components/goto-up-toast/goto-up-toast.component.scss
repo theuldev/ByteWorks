@@ -1,0 +1,19 @@
+.__arrow_up {
+    background-color: var(--bw-color-dark-blue-800);
+    bottom: 5px; 
+    border-radius: 8px!important;
+    //border: 2px solid var(--bw-color-cyan-200);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .icon-arrow-up{
+        color: var(--bw-color-cyan-200);
+
+    }
+    &:hover{
+        background-color: var(--bw-color-cyan-200);
+        transition: background-color 0.1s;
+        .icon-arrow-up{
+            color: var(--bw-color-dark-blue-800);
+    
+        }
+    }
+}

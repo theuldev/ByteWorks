@@ -1,6 +1,6 @@
 .wrapper {
     background: radial-gradient(ellipse at bottom, var(--bw-color-dark-blue-800) 0%, var(--bw-color-dark-blue-900) 100%) !important;
-
+    
     .wrapper-content {
         .container {
             .icon-whatsapp {
@@ -14,7 +14,29 @@
         .btn-floating {}
     }
 }
+.__whatsapp {
+    bottom: 80px;
+}
 
+.__arrow_up {
+    background-color: var(--bw-color-dark-blue-800);
+    bottom: 5px; 
+    border-radius: 8px!important;
+    //border: 2px solid var(--bw-color-cyan-200);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .icon-arrow-up{
+        color: var(--bw-color-cyan-200);
+
+    }
+    &:hover{
+        background-color: var(--bw-color-cyan-200);
+        transition: background-color 0.1s;
+        .icon-arrow-up{
+            color: var(--bw-color-dark-blue-800);
+    
+        }
+    }
+}
 @-webkit-keyframes shake-horizontal {
 
     0%,
@@ -27,25 +49,25 @@
     30%,
     50%,
     70% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
     }
 
     20%,
     40%,
     60% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
     }
 
     80% {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
     }
 
     90% {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
     }
 }
 
@@ -61,25 +83,25 @@
     30%,
     50%,
     70% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
     }
 
     20%,
     40%,
     60% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
     }
 
     80% {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
     }
 
     90% {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
     }
 }
 @media(max-width: 395px) {
